@@ -1,0 +1,317 @@
+body
+{
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color:#000009;
+    overflow-x: hidden                      /*for tackling css grid overflow*/
+}
+
+h1
+{
+    margin-top: 0;
+    color: antiquewhite;
+    top: 190px;
+    /* left: 50px; */
+    font-size: 80px;
+    text-align: center;
+
+}
+
+h2
+{
+    margin-top: 0;
+    color: antiquewhite;
+    top: 190px;
+    /* left: 50px; */
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.heading
+{
+    margin-top: 10%;
+}
+  
+/* ---------------------------------------------NAVIGATION BAR------------------------------------- */
+.navbar-custom {
+    background-color: #000009;
+}
+
+
+.navbar-custom .nav-link 
+{
+    color: antiquewhite;
+}
+
+.navbar-custom .navbar-nav
+{
+    padding-right: 100px;
+}
+
+#vantajs
+{
+    width: auto; height: 600px; margin-bottom: 10px;
+    z-index: -1;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,63,129, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+
+.nav-t
+{
+  margin: 0 25px;
+}
+
+.nav-tt
+{
+  margin-left: 25px;
+}
+
+.nav-t:hover
+{
+  color: #F582A7;
+}
+
+
+
+/**--------------------------------------------------ANIMATED BACKGROUND--------------------------*/
+.title
+{
+  font-family: 'Cormorant Upright', serif;
+  font-size: 7rem;
+}
+
+/*------------------------------------------------ABOUT ME--------------------------------------*/
+
+.about
+{
+    text-align: center;
+    color: #FDEFF4;
+    padding: 0% 15%;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+
+/*-------------------------------------------------SKILLS--------------------------------------------*/
+
+.skills
+{
+    align-content: center;
+}
+
+.skill-bars{
+    padding: 25px 30px;
+    width: 70%;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 2% 15%;
+    align-items: center;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #937DC2;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 65%;
+  }
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+  .bar .progress-line.python span{
+    width: 75%;
+  }
+  .bar .progress-line.mysql span{
+    width: 85%;
+  }
+  .bar .progress-line.cpp span{
+    width: 80%;
+  }
+  .bar .progress-line.ml span{
+    width: 70%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "75%";
+  }
+  .progress-line.css span::after{
+    content: "75";
+  }
+  .progress-line.cpp span::after{
+    content: "85%";
+  }
+  .progress-line.python span::after{
+    content: "80";
+  }
+  .progress-line.mysql span::after{
+    content: "85%";
+  }
+  .progress-line.ml span::after{
+    content: "70%";
+  }
+
+.skill-bars
+{
+  background-color: #F582A7;
+}
+
+
+/* ---------------------------------------------PROJECTS------------------------------------- */
+
+.col-lg-4
+{
+    
+}
+
+.card-body
+{
+  background-color: #F582A7;
+}
+
+.card
+{
+    margin: 100px;
+    
+}
+
+.card-img-top
+{
+    padding: 3%;
+    height: 300px;
+    width: auto;
+}
+
+.card-title
+{
+  font-weight: bolder;
+  color: #000009;
+}
+
+.card-text
+{
+    height: 100px;
+    font-weight:500;
+    color: black;
+}
+
+
+/*-----------------------------------------------------FOOTER-------------------------------------*/
+
+#contact
+{
+    text-align: center;
+    background-color: #363636;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 1%;
+    font-size: larger;
+    color: white
+}
+
+.end
+{
+    margin-bottom: 0;
+    margin-top: 15px;
+    /* padding-top: 2% 0;  */
+}
+
+.social
+{
+  margin: 20px 10px;
+  color:#FDEFF4;
+  size: 30px;
+}
+
+.social:hover
+{
+  color:#F582A7;
+}
+
+.get 
+{
+  font-size: 30px;
+}
+
+
+
+
+
+
+
