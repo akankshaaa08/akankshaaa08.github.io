@@ -23,7 +23,7 @@ h2
     color: antiquewhite;
     top: 190px;
     /* left: 50px; */
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 5%;
 }
@@ -46,7 +46,7 @@ h2
 
 .navbar-custom .navbar-nav
 {
-    padding-right: 100px;
+    padding-right: 60px;
 }
 
 #vantajs
@@ -63,13 +63,9 @@ h2
 
 .nav-t
 {
-  margin: 0 25px;
+  margin: 0 20px;
 }
 
-.nav-tt
-{
-  margin-left: 25px;
-}
 
 .nav-t:hover
 {
@@ -82,7 +78,7 @@ h2
 .title
 {
   font-family: 'Cormorant Upright', serif;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 /*------------------------------------------------ABOUT ME--------------------------------------*/
@@ -93,7 +89,7 @@ h2
     color: #FDEFF4;
     padding: 0% 15%;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -248,14 +244,15 @@ h2
 
 .card
 {
-    margin: 100px;
+    margin: 60px;
+    margin-top: 20px;
     
 }
 
 .card-img-top
 {
     padding: 3%;
-    height: 300px;
+    height: 200px;
     width: auto;
 }
 
@@ -267,9 +264,10 @@ h2
 
 .card-text
 {
-    height: 100px;
+    height: 130px;
     font-weight:500;
     color: black;
+    width:auto;
 }
 
 
@@ -281,7 +279,7 @@ h2
     background-color: #363636;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     padding: 1%;
-    font-size: larger;
+    font-size: small;
     color: white
 }
 
@@ -306,7 +304,7 @@ h2
 
 .get 
 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
